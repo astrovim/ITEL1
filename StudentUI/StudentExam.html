@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <link type="text/css" rel="stylesheet" href="../Style/css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="../Style/style.css">  
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Old School</title>
+    </head>
+
+    <body>
+
+      <div class="header">
+        <img src="../Style/img/mineski-logo.png" class="logo">
+        <div class="logo-name">Old School</div>
+      </div>
+
+
+      <div class="navbar-fixed">
+        <nav>
+          
+          <div class="container">
+            <div class="nav-wrapper">
+             <div class="brand-logo center">
+              <ul>
+                <li>
+                  <a href="../index.html">Home</a>
+                </li>
+                 <li>
+                  <a href="StudentUIreq.html">Requirements</a>
+                </li>
+                 <li>
+                  <a href="StudentUIRegis.html">Registration</a>
+                </li>
+                <li>
+                  <a href="StudentExam.html">Exams</a>
+                </li>
+                 <li>
+                  <a href="Announcement.html">Announcements</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      </div>
+ 
+
+               <div class="Admis">
+           <button id ="ERbtn" class="waves-effect waves-light btn" onclick="ExamResultBlock();">Exam Result</button>
+           <button id ="ESbtn" class="waves-effect waves-light btn" onclick="ExamScheduleBlock();">Exam Schedule</button>
+           
+           <div class="AdmisContent" id ="ExRes">
+           
+            <div class="table">
+            <table id="ExamRes" cellspacing="0" cellpadding="1" border="5" width="100%">
+            <tr>
+                <th>Ref No#</th>
+                <th>Lastname</th>
+                <th>Firstname</th>
+                <th>Middlename</th>
+                <th>Result</th>
+            </tr>
+            
+                <tr>
+                <td>11</td>
+                <td>Tender</td>
+                <td>Josie</td>
+                <td>A.</td>
+                <td>PASSED</td>
+                </tr>
+                <tr>
+                <td>32</td>
+                <td>Dela Cruz</td>
+                <td>Adrian</td>
+                <td>K.</td>
+                <td>PASSED</td>
+                </tr>
+                <tr>
+                <td>52</td>
+                <td>Picadillo</td>
+                <td>Pablo</td>
+                <td>D.</td>
+                <td>PASSED</td>
+                </tr>
+                <tr>
+                <td>13</td>
+                <td>Silver</td>
+                <td>John</td>
+                <td>L.</td>
+                <td>FAILED</td>
+                </tr>
+                <tr>
+                <td>43</td>
+                <td>Ragnarson</td>
+                <td>Uthred</td>
+                <td>B.</td>
+                <td>PASSED</td>
+                </tr>
+                <tr>
+                <td>17</td>
+                <td>Tiu</td>
+                <td>Mhika</td>
+                <td>R.</td>
+                <td>PASSED</td>
+                </tr>
+                <tr>
+                <td>28</td>
+                <td>Posas</td>
+                <td>Dorothy</td>
+                <td>N.</td>
+                <td>FAILED</td>
+                </tr>
+
+
+            </table>
+            </div>
+           </div>
+
+           <div class="AdmisContent" id ="ExSched">
+            <div class="table">
+            <table id="ExamRes" cellspacing="0" cellpadding="1" border="2" width="100%" >
+            <tr>
+                <th>Ref No#</th>
+                <th>Lastname</th>
+                <th>Firstname</th>
+                <th>Middlename</th>
+                <th>Schedule</th>
+            </tr>
+            <tr>
+              <td>33</td>
+              <td>Dough</td>
+              <td>Brian</td>
+              <td>M.</td>
+              <td>2022-03-14</td>
+              </tr>
+            <tr>
+              <td>39</td>
+              <td>Sotto</td>
+              <td>James</td>
+              <td>B.</td>
+              <td>2022-03-15</td>
+              </tr>
+            <tr>
+              <td>78</td>
+              <td>Manaloto</td>
+              <td>Peter</td>
+              <td>T.</td>
+              <td>2022-03-15</td>
+              </tr>
+            <tr>
+              <td>55</td>
+              <td>Magno</td>
+              <td>Shaina</td>
+              <td>L.</td>
+              <td>2022-03-14</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td>Cruz</td>
+                <td>John</td>
+                <td>L.</td>
+                <td>2022-03-15</td>
+                </tr>
+            </table>
+            </div>
+           </div>
+
+           </div>
+      
+
+      <script type="text/javascript" src="../Style/js/materialize.min.js"></script>
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>    
+
+      <script>
+
+        function ExamResultBlock(){
+            document.getElementById('ExRes').style.display = 'block';
+            document.getElementById('ExSched').style.display = 'none';
+            document.getElementById('Admis').style.display = 'none';
+            document.getElementById('ERbtn').style.backgroundColor="#26a69a"; 
+            document.getElementById('ESbtn').style.backgroundColor="#4169E1";
+            document.getElementById('ASbtn').style.backgroundColor="#4169E1";
+        
+        
+        }
+        
+        function ExamScheduleBlock(){
+            document.getElementById('ExSched').style.display = 'block';
+            document.getElementById('ExRes').style.display = 'none';
+            document.getElementById('Admis').style.display = 'none';
+            document.getElementById('ESbtn').style.backgroundColor="#26a69a";
+            document.getElementById('ERbtn').style.backgroundColor="#4169E1";
+            document.getElementById('ASbtn').style.backgroundColor="#4169E1";
+        
+        
+        }        
+        
+        </script>
+    </body>
+  </html>
+        

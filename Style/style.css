@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Andada&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Martel:900|Roboto|Roboto+Condensed&display=swap&subset=devanagari,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+	background-color: #FEF5EF;
+}
+
+nav {
+	background-color: #584B53;
+	font-family: 'Roboto';
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none
+	font-family sans-serif;
+	
+}
+
+.header{
+	overflow: hidden;
+	background-color: #9D5C63;
+	padding: 10px 5px;
+	position: sticky;
+	min-width: max-content;
+	z-index: 420;
+    top: 0;
+	text-align: center;
+
+}
+
+.header img.logo{
+	display: inline-block;
+    width: 7vw;
+    height: auto;
+	max-width: 420px;
+	vertical-align: middle;
+}
+
+.logo-name {
+	display: inline-block;
+	font-size: 50px;
+	font-family: 'Lobster', cursive;
+	text-shadow: 2px 2px #E4BB97;
+
+}
+
+.admissionHeader {
+	font-family: 'Roboto';
+	font-weight: bold;
+}
+
+.admissionText {
+	text-align: justify;
+	font-family: 'Roboto';
+}
+
+.row{
+	padding-top: 40px;
+	margin-bottom: 0px;
+
+}
+
+.imgreq {
+	float:left; 
+	margin-right: 10px; 
+	margin-bottom: 20px;
+	width: 100px;
+	height: 100px;
+}
+
+.tabs .tab a {
+	font-family: 'Roboto';
+	background-color: #D6E3F8;
+	color: black;
+	border: 1px solid #9D5C63;
+	border-radius: 5px;
+}
+
+.tabs .tab a:focus {
+	background-color: #9D5C63;
+	color: whitesmoke;
+}
+
+.tabs .tab a:hover {
+	background-color: #9D5C63;
+	color: whitesmoke;
+}
+
+#oldStud {
+	display:none;
+}
+
+.table {
+    width:100%;
+    min-width: 350px;
+    height: max-content; 
+    min-height: 200px;
+    overflow:auto;
+}
+
+table {
+    width: 100%;
+}
+
+.Admis {
+	margin: 25px;
+	text-align: center;
+}
+
+.AdmisContent {
+	margin-top: 75px;
+    left: 50%;
+}
+
+button {
+    font-family: sans-serif;
+    width: 200px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+	background-color: #9D5C63;
+}
+
+.btn:hover {
+	background-color: #E4BB97;
+	color: black;
+}
+
+.btn:focus {
+	background-color: #E4BB97;
+	color: black;
+}
+
+#banner {
+	text-align: center;
+	transform: scaleX(-1);
+}
+
+#ExRes, #ExSched {
+	display: none;
+}
+
+#announce {
+	width: 900px;
+	height: 500px;
+	margin:auto;
+	border: 5px solid black;
+	border-radius: 15px;
+	font-size: 125px;
+	font-family: 'Lobster', cursive;
+	text-shadow: 5px 5px #E4BB97;
+}

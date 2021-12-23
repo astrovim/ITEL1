@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <link type="text/css" rel="stylesheet" href="../Style/css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="../Style/style.css">  
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Old School</title>
+    </head>
+
+    <body>
+
+      <div class="header">
+        <img src="../Style/img/mineski-logo.png" class="logo">
+        <div class="logo-name">Old School</div>
+      </div>
+
+
+      <div class="navbar-fixed">
+        <nav>
+          
+          <div class="container">
+            <div class="nav-wrapper">
+             <div class="brand-logo center">
+              <ul>
+                <li>
+                  <a href="../index.html">Home</a>
+                </li>
+                 <li>
+                  <a href="StudentUIreq.html">Requirements</a>
+                </li>
+                 <li>
+                  <a href="StudentUIRegis.html">Registration</a>
+                </li>
+                <li>
+                  <a href="StudentExam.html">Exams</a>
+                </li>
+                 <li>
+                  <a href="Announcement.html">Announcements</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      </div>
+
+      <section class="container section" id="req">
+        <div class="row">
+          <div class="col s12 l6 offset-12">
+            <ul class="tabs">
+              <li class="tab col s6">
+                <a onclick="javascript:newReq();" href="#">New Student</span></a>
+              </li>
+              <li class="tab col s6">
+                <a onclick="javascript:oldReq();" href="#">Old Student</span></a>
+              </li>
+            </ul>
+
+
+          </div>
+      </section>
+      
+        <div class="container" id="newStud"> 
+
+          <div class="admissionHeader"><h5>New Student</h5></div>
+
+              <div class="row">
+
+                  <div class="col l6 m4 s12">
+                        <img class="imgreq" src="../Style/img/ICON_REGFORM.jpg"> 
+                       
+                            <h6>Online Registration Application</h6>
+                            <p>
+                            1. Go to Registration.<br>
+                            2. Fill up the form, make sure that is true and specific.<br>
+                            3. Click "submit" after filling up the form.</p>
+                  </div>
+
+                  <div class="col l6 m4 s12">
+                      <img class="imgreq" src="../Style/img/ICON_GOODMORAL.jpg"> 
+                      <h6><strong>Certificate of Good Moral Character</strong></h6>
+                  </div>
+
+              </div>
+
+
+                  <div class="row">
+                       
+                       <div class="col l6 m4 s12">
+                          <img class="imgreq" src="../Style/img/ICON_F138.jpg"> 
+                          <h6><strong>Progress Report Card <div F137=""></div></strong> (with a General Average Grade of at least 85% or its equivalent)</h6>
+                       </div>
+
+                       <div class="col l6 m4 s12">
+                          <img class="imgreq" src="../Style/img/ICON_PSA.jpg"> 
+                          <h6><strong>Birth Certificate</strong> (NSO)</h6>
+                       </div>
+        
+                  </div>
+
+                    <div class="row">
+                       
+                       <div class="col l6 m4 s12">
+                          <img class="imgreq" src="../Style/img/ICON_2x2ID.jpg"> 
+                          <h6><strong>Four</strong> (4) copies of latest 2x2 colored photo</h6>
+                       </div>
+
+                     </div>
+
+            </div>
+
+            </div>
+           
+            <div class="container" id="oldStud">
+
+          <div class="admissionHeader"><h5>Old Student</h5></div>
+             
+              <div class="row">
+
+                  <div class="col l6 m4 s12">
+                      <img class="imgreq" src="../Style/img/ICON_CLEARANCE.jpg"> 
+                      <h6><strong>Student Clearance</strong> (of last school year)</h6>
+                  </div>
+
+                  <div class="col l6 m4 s12">
+                    <img class="imgreq" src="../Style/img/ICON_2x2ID.jpg"> 
+                    <h6><strong>Four</strong> (4) copies of latest 2x2 colored photo</h6>
+                 </div>
+
+              </div>
+
+            </div>
+           
+
+      <script type="text/javascript" src="../Style/js/materialize.min.js"></script>
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+
+      <script type="text/javascript">
+
+        function newReq() {
+        document.getElementById('newStud').style.display = 'block';
+        document.getElementById('oldStud').style.display = 'none';
+        }
+
+        function oldReq() {
+        document.getElementById('oldStud').style.display = 'block';
+        document.getElementById('newStud').style.display = 'none';
+        }
+
+        </script>
+
+    </body>
+  </html>
+        
